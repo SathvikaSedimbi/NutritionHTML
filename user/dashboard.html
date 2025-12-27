@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        .content {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+           
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: rgb(122, 165, 122);
+            
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 span {
+            margin-right: 10px;
+        }
+
+        .meal-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .badge {
+            
+            padding: 5px 12px;
+            border-radius: 12px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to  Dashboard</h1>
+
+        <div class="card">
+            <h2>🥤 Daily Goals</h2>
+            <div class="meal-item">
+                <span>Water Intake</span>
+                <span class="badge">6/8 glasses</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width:75%"></div>
+            </div>
+
+            <div class="meal-item">
+                <span>Calories</span>
+                <span class="badge">1450/1800 kcal</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width:80%"></div>
+            </div>
+
+            <div class="meal-item">
+                <span>Vegetables</span>
+                <span class="badge">2/2 servings</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress" style="width:100%"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>🍴 Today's Meal Suggestion</h2>
+            <div class="meal-item"><span>Breakfast</span><span class="badge">Oats + Fruits</span></div>
+            <div class="meal-item"><span>Lunch</span><span class="badge">Brown rice + Dal + Veggies</span></div>
+            <div class="meal-item"><span>Dinner</span><span class="badge">Chapati + Paneer + Salad</span></div>
+        </div>
+
+        <div class="card">
+            <h2>📊 Weekly Summary</h2>
+            <div class="meal-item"><span>Calorie Goal</span><span class="badge">5/7 days met</span></div>
+            <div class="meal-item"><span>Water Intake</span><span class="badge">Improved 20%</span></div>
+            <div class="meal-item"><span>Physical Activity</span><span class="badge">Increased</span></div>
+        </div>
+    </div>
+</body>
+</html>

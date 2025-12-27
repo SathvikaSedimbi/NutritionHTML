@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriTrack - Main Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #c2eee2;/
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .header-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      margin-left: 20px;
+      padding: 6px 12px;
+      border: 1px solid white;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .box {
+      width: 180px;
+      height: 200px;
+      border: 2px solid #b6c8a1;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: rgb(209, 229, 196);
+      text-decoration: none;
+      color: black;
+    }
+
+    .icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .label {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <h1>NutriTrack</h1>
+
+    <div class="header-links">
+      <a href="settings.html">Settings</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <a href="userinterface.html" class="box">
+      <div class="icon">👤</div>
+      <div class="label">User</div>
+    </a>
+
+    <a href="homepage/homepage.html" class="box">
+      <div class="icon">🛠</div>
+      <div class="label">Admin</div>
+    </a>
+
+    <a href="nutrition.html" class="box">
+      <div class="icon">🥗</div>
+      <div class="label">Nutri Expert</div>
+    </a>
+
+  </div>
+
+</body>
+</html>

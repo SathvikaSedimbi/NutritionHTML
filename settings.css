@@ -1,0 +1,131 @@
+/* ===== General Page Styling ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #2e8b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Container ===== */
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== Headings ===== */
+h2, h3 {
+  text-align: center;
+  color: #1a3c24;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 1.6em;
+  border-bottom: 2px solid #2e8b57;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+/* ===== Input Fields & Select ===== */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+input[type="password"]:focus,
+select:focus {
+  border-color: #2e8b57;
+  box-shadow: 0 0 8px rgba(46, 139, 87, 0.3);
+  background-color: #fff;
+  outline: none;
+}
+
+/* ===== Checkbox Group ===== */
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.checkbox-group input {
+  accent-color: #2e8b57;
+  margin-right: 10px;
+}
+
+/* ===== Buttons ===== */
+button {
+  display: block;
+  width: 100%;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #256d46;
+  box-shadow: 0 4px 10px rgba(46, 139, 87, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===== Section Spacing ===== */
+.section {
+  margin-bottom: 35px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.dark {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+

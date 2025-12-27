@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 3 Equal Background Panels */
+.background {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.bg-img {
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.img1 { background-image: url("webb.jpg"); }
+.img2 { background-image: url("webbee.jpg"); }
+.img3 { background-image: url("tele.jpg"); }
+
+/* Text + Form Container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    
+    margin-bottom: 20px;
+}
+
+/* Registration Box */
+.form-box {
+    width: 360px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+   background-color: rgb(122, 165, 122);
+    color: white;
+}
+
+.form-box h2 {
+    margin-bottom: 15px;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}

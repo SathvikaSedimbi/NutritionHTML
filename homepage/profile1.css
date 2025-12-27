@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f7ff;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 25px;
+}
+
+
+fieldset {
+    width: 60%;
+    max-width: 800px;
+    background: white;
+    border: 1px solid #c7d9ec;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+
+fieldset:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-color: #7ab2f0;
+}
+
+
+.img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Profile image */
+.img img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #a7c8ff;
+    transition: 0.3s;
+}
+
+/* Hover effect for image */
+.img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Content inside profile box */
+.content p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+/* Section titles */
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #1457a7;
+}

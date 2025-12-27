@@ -1,0 +1,160 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f9f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #124026;
+      margin-top: 40px;
+    }
+
+    /* Search Section */
+    section {
+      width: 50%;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #dcdcdc;
+      margin: 40px auto;
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s ease;
+      background-color: #f9f9f9;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4CAF50;
+      box-shadow: 0 0 8px rgba(76, 175, 80, 0.4);
+      background-color: #fff;
+    }
+
+    input[type="text"]::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+
+    /* Plans Section */
+    .plans {
+      width: 85%;
+      margin: 0 auto 60px auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .plans button {
+      background-color: #ffffff;
+      border: 1px solid #cce3d2;
+      border-radius: 15px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .plans button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      border-color: #4CAF50;
+    }
+
+    .plans button h3 {
+      color: #124026;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .plans button p {
+      color: #444;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .plans a {
+      display: block;
+      text-align: center;
+      margin-top: 25px;
+      font-weight: bold;
+      color: #4CAF50;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .plans a:hover {
+      color: #2e7031;
+      text-decoration: underline;
+    }
+
+    /* Best Plans Section */
+    .bestplan {
+      background-color: #ffffff;
+      width: 85%;
+      margin: 0 auto 80px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .bestplan h2 {
+      color: #124026;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      text-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .bestplan button {
+      background: white;
+      border: none;
+      border-radius: 15px;
+      padding: 25px 35px;
+      width: 250px;
+      margin: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .bestplan button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(to right, #2e8b57, #5cc97b);
+      color: white;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .bestplan h3 {
+      margin: 10px 0 5px 0;
+      color: #126e32;
+      font-size: 18px;
+    }
+
+    .bestplan button:hover h3 {
+      color: white;
+    }
+
+    .bestplan p {
+      color: #3a3a3a;
+      font-size: 0.95rem;
+    }
+
+    .bestplan button:hover p {
+      color: #f0fff4;
+    }
+

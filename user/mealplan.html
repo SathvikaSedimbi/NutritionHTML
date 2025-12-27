@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balance Diet - Meal Plans</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .content {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .day-card {
+            background: rgb(122, 165, 122);
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .day-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .day-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .meal-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .meal-list li {
+            background: rgba(255,255,255,0.2);
+            padding: 10px;
+            border-radius: 6px;
+            margin: 6px 0;
+        }
+
+        li strong {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1 style="text-align:center; margin-bottom:30px;">Weekly Meal Plans</h1>
+
+    <div class="day-card" onclick="toggleMeals(this)">
+        <div class="day-title">Monday</div>
+        <ul class="meal-list">
+            <li><strong>Breakfast:</strong> Oats with fruits</li>
+            <li><strong>Lunch:</strong> Brown rice + dal + vegetables</li>
+            <li><strong>Dinner:</strong> Chapati + paneer + salad</li>
+        </ul>
+    </div>
+
+    <div class="day-card" onclick="toggleMeals(this)">
+        <div class="day-title">Tuesday</div>
+        <ul class="meal-list">
+            <li><strong>Breakfast:</strong> Poha with vegetables</li>
+            <li><strong>Lunch:</strong> Quinoa salad with veggies</li>
+            <li><strong>Dinner:</strong> Grilled tofu with stir-fried vegetables</li>
+        </ul>
+    </div>
+
+    <div class="day-card" onclick="toggleMeals(this)">
+        <div class="day-title">Wednesday</div>
+        <ul class="meal-list">
+            <li><strong>Breakfast:</strong> Smoothie bowl</li>
+            <li><strong>Lunch:</strong> Chickpea curry + brown rice</li>
+            <li><strong>Dinner:</strong> Chapati + vegetable curry</li>
+        </ul>
+    </div>
+
+    <div class="day-card" onclick="toggleMeals(this)">
+        <div class="day-title">Thursday</div>
+        <ul class="meal-list">
+            <li><strong>Breakfast:</strong> Idli + sambar</li>
+            <li><strong>Lunch:</strong> Lentil soup + whole grain bread</li>
+            <li><strong>Dinner:</strong> Paneer salad</li>
+        </ul>
+    </div>
+
+    <div class="day-card" onclick="toggleMeals(this)">
+        <div class="day-title">Friday</div>
+        <ul class="meal-list">
+            <li><strong>Breakfast:</strong> Banana pancakes with honey</li>
+            <li><strong>Lunch:</strong> Vegetable stir-fry with tofu</li>
+            <li><strong>Dinner:</strong> Grilled vegetables + quinoa</li>
+        </ul>
+    </div>
+
+    <div class="day-card" onclick="toggleMeals(this)">
+        <div class="day-title">Saturday</div>
+        <ul class="meal-list">
+            <li><strong>Breakfast:</strong> Muesli with yogurt</li>
+            <li><strong>Lunch:</strong> Brown rice + dal + veggies</li>
+            <li><strong>Dinner:</strong> Chapati + mixed vegetable curry</li>
+        </ul>
+    </div>
+
+    <div class="day-card" onclick="toggleMeals(this)">
+        <div class="day-title">Sunday</div>
+        <ul class="meal-list">
+            <li><strong>Breakfast:</strong> Vegetable omelette + toast</li>
+            <li><strong>Lunch:</strong> Quinoa salad + grilled vegetables</li>
+            <li><strong>Dinner:</strong> Light soup + whole grain bread</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+function toggleMeals(card) {
+    const list = card.querySelector('.meal-list');
+    if(list.style.display === 'block') {
+        list.style.display = 'none';
+    } else {
+        list.style.display = 'block';
+    }
+}
+</script>
+
+</body>
+</html>

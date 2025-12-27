@@ -1,0 +1,81 @@
+form {
+    margin: 30px auto;
+    background: white;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 70%;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+
+  form:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+
+  label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    color: #155724;
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 60%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #198754;
+    box-shadow: 0 0 5px #a5d6a7;
+  }
+
+  p {
+    font-weight: bold;
+    color: #124026;
+    margin-top: 20px;
+  }
+
+  /* Radio buttons */
+  input[type="radio"] {
+    accent-color: #198754;
+    margin-right: 6px;
+    cursor: pointer;
+  }
+
+  label[for="regular"],
+  label[for="Premium"],
+  label[for="golden premium"] {
+    width: auto;
+    margin-right: 15px;
+    color: #333;
+  }
+
+  /* Submit button */
+  input[type="submit"] {
+    background-color: #198754;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #145c32;
+    transform: scale(1.05);
+  }
+
+  

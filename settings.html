@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - FEDF-PS23</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+  <header>
+    Settings
+  </header>
+
+  <div class="container">
+    <h2>Account Settings</h2>
+
+    <div class="section">
+      <label for="currentPassword">Current Password</label>
+      <input type="password" id="currentPassword" placeholder="Enter current password">
+
+      <label for="newPassword">New Password</label>
+      <input type="password" id="newPassword" placeholder="Enter new password">
+
+      <label for="confirmPassword">Confirm New Password</label>
+      <input type="password" id="confirmPassword" placeholder="Confirm new password">
+
+      <button>Change Password</button>
+    </div>
+
+    <div class="section">
+      <h3>Display Mode</h3>
+      <select>
+        <option value="light">Light Mode</option>
+        <option value="dark">Dark Mode</option>
+        <option value="auto">Auto</option>
+      </select>
+    </div>
+
+    <div class="section">
+      <h3>Permissions</h3>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Camera Permission</label>
+        <label><input type="checkbox"> Microphone Permission</label>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Language</h3>
+      <select>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="te">Telugu</option>
+      </select>
+    </div>
+
+    <button>Save Settings</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Plates - Get to know your body</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body{
+            
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: 10% 90%;
+            grid-template-columns: 20% 80%;
+        }
+        .one{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            background-color: rgb(39, 114, 72);
+            padding-left: 20px;
+        }
+        
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        a:hover{
+            color: white;
+            text-shadow: 0 0 10px white, 0 0 20px lightgreen;
+        }
+        .welcome h1 {
+        color: #124026;
+        letter-spacing: 1px;
+        }
+        .welcome h2 {
+        color: #3a3a3a;
+        font-weight: 400;
+        margin-top: -10px;
+        }
+
+        .menu{
+            grid-row: 1/4;
+            background: linear-gradient(to top right, rgb(56, 147, 96), #126e32, #228043);
+            grid-column: 1/2;
+            height: 150vh;
+            
+            color: white;
+            
+    
+        }
+        .menu a {
+        display: flex;
+        justify-content: flex-start;
+        width: 250px;
+        padding: 10px;
+        font-size: 1.1rem;
+        color: #e8fff0;
+        transition: all 0.3s ease;
+        display: block;
+        margin: 30px;
+        }
+        .menu a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        transform: scale(1.05);
+        }
+
+  
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h3 style="margin: 40px;"><i class="fa-solid fa-utensils"></i> NutriTract</h3>
+        <a href="/user.html"><i class="fa-solid fa-users"></i> Users</a><br>
+        <a href="/nutrition.html"><i class="fa-brands fa-nutritionix"></i> Nutrition Data</a><br>
+        <a href="/recomendation.html"><i class="fa-solid fa-bowl-food"></i> Dietary Recomendations</a><br>
+        <a href="/settings.html" ><i class="fa-solid fa-gear"></i> Settings</a><br><br>
+        
+    </div>
+    <nav class="one">
+        <p style="cursor: pointer; color: white;"><i class="fa-solid fa-bars"></i><b> NutriTrack</b></p>
+        <a href="#admin" style="text-decoration: none; color: white; padding: 20px 70px"><i class="fa-solid fa-user-tie">Admin</i></a>
+    </nav>
+    
+    <div class="welcome" style="text-align: center; padding: 50px; grid-row: 2/3;">
+        <h1>Welcome, Admin 🍎</h1>
+        <h2> “ Manage diets, track progress, and spread wellness.”</h2>
+
+
+        <section style="margin-top: 40px;">
+        <h3 style="color: #124026;">Today’s Overview</h3>
+        <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-top: 25px;">
+            <div style="background: white; padding: 20px 40px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <h2 style="color:#126e32; margin:0;">42</h2>
+                <a href="activeUsers.html"><p style="color:#3a3a3a;">Power Users<i class="fa fa-star"></i></p></a>
+            </div>
+            <div style="background: white; padding: 20px 40px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <h2 style="color:#126e32; margin:0;">17</h2>
+                <a href="dietplans.html"><p style="color:#3a3a3a;">Diet Plans Updated <i class="fa fa-bowl-food"></i></p></a>
+            </div>
+            <div style="background: white; padding: 20px 40px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <h2 style="color:#126e32; margin:0;">23</h2>
+                <a href="recoupdations.html"><p style="color:#3a3a3a;"> Reviews <i class="fa fa-utensils"></i></p></a>
+            </div>
+        </div>
+    </section>
+
+    <section style="margin-top: 60px;">
+        <h3 style="color: #124026;">Daily Wellness Tip 🌿</h3>
+        <p style="color:#2c2c2c; max-width:600px; margin:auto; font-size:1.1rem;">
+            Stay hydrated — drink at least 8 glasses of water today.  
+            A healthy mind begins with a nourished body. 💧
+        </p>
+    </section>
+
+    <section style="margin-top: 60px;">
+        <h3 style="color: #124026;">Recent Activity</h3>
+        <ul style="list-style:none; padding:0; max-width:600px; margin:20px auto; text-align:left; color:#2c2c2c;">
+            <li>✨ New user <b>Lakshmi</b> joined the platform</li>
+            <li>✨ <b>Breakfast Plan</b> updated for User 00101</li>
+            <li>✨ Nutrient data refreshed — 3 new items added</li>
+        </ul>
+    </section>
+
+    <footer style="margin-top: 70px; font-size: 0.9rem; color: #124026;">
+        © 2025 Nutri Track | Designed for wellness and balance 🌿
+    </footer>
+   
+    </div>
+    
+    
+</body>
+</html>

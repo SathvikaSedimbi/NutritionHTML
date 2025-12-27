@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cheat Day</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        .main-box {
+            width: 500px;
+            margin: auto;
+            background: rgb(122, 165, 122);
+            padding: 25px;
+            border-radius: 15px;
+            color: black;
+        }
+
+        .food-list div {
+            background: white;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: 0.3s;
+            border-left: 6px solid black;
+        }
+
+        .food-list div:hover {
+            transform: translateX(5px);
+            background: #e8e8e8;
+        }
+
+        
+        #popupBg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+
+        #popupBox {
+            width: 320px;
+            margin: 120px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            color: black;
+        }
+
+        .closeBtn {
+            margin-top: 15px;
+            padding: 10px;
+            background: black;
+            color: white;
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="main-box">
+    <h2>Cheat Day</h2>
+
+
+    <div class="food-list">
+        <div onclick="showMeal('Pizza', 266, 10, 33, 12)">Pizza Slice</div>
+        <div onclick="showMeal('Burger', 295, 12, 30, 17)">Burger</div>
+        <div onclick="showMeal('French Fries', 312, 15, 41, 3)">French Fries</div>
+        <div onclick="showMeal('Chocolate', 208, 12, 24, 2)">Chocolate Bar</div>
+        <div onclick="showMeal('Ice Cream', 207, 11, 24, 3)">Ice Cream Cup</div>
+    </div>
+
+    <button onclick="finishDay()" 
+            style="margin-top:20px;padding:10px;width:100%;background:black;color:white;border-radius:10px;border:none;">
+        Finish Cheat Day
+    </button>
+
+</div>
+
+
+<div id="popupBg">
+    <div id="popupBox">
+        <h3 id="mealName"></h3>
+        <p id="nutrition"></p>
+        <button class="closeBtn" onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script>
+let count = 0;
+
+function showMeal(name, calories, fats, carbs, protein) {
+    count++;
+
+    
+    document.getElementById("mealName").innerHTML = name;
+    document.getElementById("nutrition").innerHTML = 
+        "Calories: " + calories + "<br>" +
+        "Fats: " + fats + "g<br>" +
+        "Carbs: " + carbs + "g<br>" +
+        "Protein: " + protein + "g";
+
+    
+    document.getElementById("popupBg").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popupBg").style.display = "none";
+}
+
+function finishDay() {
+    if (count > 3) {
+        alert("You selected " + count + " cheat foods today. Reduce it next time.");
+    } else {
+        alert("Good! You only selected " + count + " cheat foods.");
+    }
+}
+</script>
+
+</body>
+</html>

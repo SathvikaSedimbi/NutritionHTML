@@ -1,0 +1,70 @@
+body{
+    background: linear-gradient(200deg, rgb(90, 231, 151),rgb(3, 113, 25));
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+.plan{
+    display: flex;
+    margin-top: 70px;
+    
+}
+.part1{
+    height: 460px;
+    margin-top: 35px;
+    background-color: rgb(52, 221, 105);
+    border: rgb(39, 114, 72);
+    
+}
+.part2{
+    color: rgb(39, 114, 72);
+    border: rgb(47, 255, 113);
+    height: 530px;
+    width: 300px;
+    background-color: rgb(47, 255, 113);
+}
+fieldset{
+    border-radius: 30px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    background: white;
+    margin-left: 60px;
+    margin-right: 70px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+li{
+    font-size: 20px;
+}
+button {
+    margin-left: 90px;
+    padding: 15px;
+    background-color: white;
+    color: rgb(39, 114, 72);
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.lite:hover {
+    background: linear-gradient(200deg, rgb(130, 250, 66), rgb(33,249,5),rgb(130, 250, 66));
+    transform: scale(1.07) translateY(-3px);
+    box-shadow: 0 0 15px rgba(33, 249, 5, 0.8);
+}
+.gold:hover {
+    background: linear-gradient(200deg, rgb(231, 249, 77), rgb(181,225,5),rgb(231, 249, 77));
+    transform: scale(1.07) translateY(-3px);
+    box-shadow: 0 0 15px rgba(181, 225, 5, 0.8);
+}
+.premium:hover {
+    background: linear-gradient(200deg, rgb(243, 124, 84), rgb(225,16,5),rgb(243, 124, 84));
+    transform: scale(1.07) translateY(-3px);
+    box-shadow: 0 0 15px rgba(225, 16, 5, 0.8);
+    color: white;
+}

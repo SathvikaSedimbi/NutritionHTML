@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(39, 114, 72);">User Database </h1>
+    <section style="margin-top: 40px;">
+        <input type="text" placeholder="🔍 Search users" 
+               style="width: 50%; padding: 10px; border-radius: 8px; border: 1px solid #ccc; margin: 0 auto; display:block;">
+    </section>
+    <style>
+        a{
+            text-decoration: none;
+            color: rgb(27, 225, 77);
+        }
+    </style>
+
+    <table border="1">
+        <tr>
+            <th>Userid</th>
+            <th>Username</th>
+            <th>Age</th>
+            <th>BMI</th>
+            <th>Major Health Issues</th>
+            <th>Plan</th>
+            <th>Membership</th>
+            <th>Progress</th>
+            <th>LeaderBoard Rank</th>
+            <th>View Details</th>
+        </tr>
+
+        <tr>
+            <td>00101</td>
+            <td>Gouthami_Nayani</td>
+            <td>34</td>
+            <td>23.2</td>
+            <td>-</td>
+            <td>Balanced Diet</td>
+            <td>Regular</td>
+            <td>53%</td>
+            <td>#563</td>
+            <td><a href="homepage/profile1.html">View More</a></td>
+        </tr>
+
+        <tr>
+            <td>05671</td>
+            <td>Paavani0898</td>
+            <td>17</td>
+            <td>21.00</td>
+            <td>-</td>
+            <td>Balanced Diet</td>
+            <td>Regular</td>
+            <td>58%</td>
+            <td>#343</td>
+            <td><a href="#">View More</a></td>
+        </tr>
+        <tr>
+            <td>20021</td>
+            <td>Nancy_lovely</td>
+            <td>21</td>
+            <td>18.3</td>
+            <td>Bulimia Nervosa</td>
+            <td>Weight Gain</td>
+            <td>Premium</td>
+            <td>58%</td>
+            <td>#923</td>
+            <td><a href="homepage/profile3.html">View More</a></td>
+        </tr>
+        <tr>
+            <td>11284</td>
+            <td>Unknown_143</td>
+            <td>25</td>
+            <td>36.4</td>
+            <td>Obesity</td>
+            <td>Weight Loss</td>
+            <td>Regular</td>
+            <td>73%</td>
+            <td>#63</td>
+            <td><a href="homepage/profile2.html" style="text-decoration: none;">View More</a></td>
+        </tr>
+        <tr>
+            <td>03521</td>
+            <td>PxXde_214</td>
+            <td>67</td>
+            <td>28.2</td>
+            <td>Diabetics</td>
+            <td>Balanced Diet</td>
+            <td>Regular</td>
+            <td>88%</td>
+            <td>#963</td>
+            <td><a href="#">View More</a></td>
+        </tr>
+
+    </table>
+
+
+    <section style="margin-top: 60px; text-align:center;">
+        <h3 style="color:#124026; text-align: center;" >Add New User ➕</h3>
+        <form style="margin-top:20px; text-align:center;  margin-left: 170px; background:white; padding:25px 40px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); width: 70%;">
+            <label for="userid">UserID</label>
+            <input type="text" placeholder="Enter UserID" required><br><br>
+            <label for="username">UserName</label>
+            <input type="text" placeholder="Enter UserName" required><br><br>
+            <label for="age">Age</label>
+            <input type="number" placeholder="Age" required><br><br>
+            <label for="HealthIssues">Health Issues</label>
+            <input type="text" placeholder="Heath Issues"><br><br>
+            <p>Select Plan:</p>
+            <label for="regular">Regular</label>
+            <input type="radio" value="regular">
+            <label for="Premium">Premium</label>
+            <input type="radio" value="premium">
+            <label for="golden premium">Golden Premium</label>
+            <input type="radio" value="golden premium"><br><br>
+            <input type="submit" value="+ADD">
+
+
+            
+        </form>
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #155724;
+    margin-bottom: 30px;
+}
+
+
+
+.gift table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.gift table:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.gift table th {
+    background: #198754; 
+    color: white;
+    padding: 14px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.gift table td {
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    color: #155724;
+}
+
+.gift table tr:hover {
+    background: #e8f5e9; /* light green matching homepage */
+}
+
+
+a {
+    color: #198754;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #145c32;
+    text-decoration: underline;
+}
+
+.fa-users,
+.fa-user-tie {
+    color: #155724;
+}
+
+
+
+.fa-gift {
+    font-size: 22px;
+    color: #b8860b;  /* Rich gold */
+    animation: goldShine 2s infinite linear;
+}
+
+@keyframes goldShine {
+    0% {
+        color: #b8860b;
+        text-shadow: 0 0 3px #b8860b;
+    }
+    50% {
+        color: #d4a017; /* Brighter gold */
+        text-shadow: 0 0 10px #ffd700, 0 0 18px #ffef9f;
+    }
+    100% {
+        color: #b8860b;
+        text-shadow: 0 0 3px #b8860b;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Checker</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: black;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Popup Modal */
+        .popup-bg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+        }
+
+        .popup-box {
+            width: 300px;
+            margin: 100px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .close-btn {
+            background: red;
+            color: white;
+            padding: 8px;
+            margin-top: 15px;
+            border: none;
+            width: 100%;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>BMI Checker</h2>
+
+    <label>Enter Weight (kg)</label>
+    <input type="number" id="weight" placeholder="Weight in kg">
+
+    <label>Enter Height (cm)</label>
+    <input type="number" id="height" placeholder="Height in cm">
+
+    <button onclick="checkBMI()">Check BMI</button>
+</div>
+
+<!-- Popup Modal -->
+<div class="popup-bg" id="popupBg">
+    <div class="popup-box">
+        <h3 id="popupText"></h3>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script>
+function checkBMI() {
+    let w = document.getElementById("weight").value;
+    let h = document.getElementById("height").value;
+
+    if (w === "" || h === "") {
+        alert("Please enter both height and weight.");
+        return;
+    }
+
+    let heightInM = h / 100;
+    let bmi = (w / (heightInM * heightInM)).toFixed(2);
+
+    if (bmi >= 18.5 && bmi <= 24.9) {
+        document.getElementById("popupText").innerHTML = "Your BMI is " + bmi + ". You are in the Normal range.";
+        document.getElementById("popupBg").style.display = "block";
+    } else {
+        alert("Your BMI is " + bmi + ". You are not in the Normal range.");
+    }
+}
+
+function closePopup() {
+    document.getElementById("popupBg").style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      background-color: #e6ffff;
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #e9f5f1;
+      padding: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #2e8b57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 850px;
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0px 3px 6px rgba(0,0,0,0.15);
+    }
+
+    h2 {
+      color: #2e8b57;
+      border-left: 4px solid #2e8b57;
+      padding-left: 8px;
+      font-size: 22px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .static-box {
+      background: #f7fffa;
+      padding: 15px;
+      border-radius: 8px;
+      border-left: 4px solid #2e8b57;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>User Portal</header>
+
+<nav>
+  <a href="#diet">Diet Input</a>
+  <a href="#bmi">BMI</a>
+  <a href="#cheat">Cheat Days</a>
+  <a href="#progress">Progress</a>
+  <a href="#personal suggestion">suggestion</a>
+  <a href="#Summary">Summary</a>
+</nav>
+
+
+<div class="container" id="diet">
+  <h2>📝 Daily Diet Input</h2>
+
+  <label>Age:</label>
+  <input type="number" placeholder="Enter your age">
+
+  <label>Gender:</label>
+  <select>
+    <option>Male</option>
+    <option>Female</option>
+    <option>Other</option>
+  </select>
+
+  <label>Meals You Ate Today:</label>
+  <textarea rows="4" placeholder="Example: Oats, Egg, Banana..."></textarea>
+
+  <label>Activity Level:</label>
+  <select>
+    <option>Low</option>
+    <option>Moderate</option>
+    <option>High</option>
+  </select>
+</div>
+
+
+<div class="container" id="bmi">
+  <h2>⚖ BMI Checker (Manual)</h2>
+
+  <label>Your Weight (kg):</label>
+  <input type="number" placeholder="Example: 70">
+
+  <label>Your Height (cm):</label>
+  <input type="number" placeholder="Example: 165">
+  <button>Enter</button>
+
+  <div class="static-box">
+    <p><strong>BMI Chart:</strong></p>
+    <p>Below 18.5 — Underweight</p>
+    <p>18.5 – 24.9 — Normal</p>
+    <p>25 – 29.9 — Overweight</p>
+    <p>30+ — Obese</p>
+  </div>
+</div>
+
+
+<div class="container" id="cheat">
+  <h2>🍕 Cheat Day Food Suggestions</h2>
+  <div class="static-box">
+    <ul>
+      <li>Dark chocolate (small piece)</li>
+      <li>Thin crust vegetable pizza</li>
+      <li>Low-fat ice cream</li>
+      <li>Chicken noodles (small portion)</li>
+      <li>Chicken shawarma (half)</li>
+      <li>Zero sugar drinks only</li>
+    </ul>
+    <p><strong>Cheat Days Allowed:</strong> 1 per week</p>
+  </div>
+</div>
+
+
+<div class="container" id="progress">
+  <h2>📉 Weight Loss Progress</h2>
+
+  <label>Starting Weight (kg):</label>
+  <input type="number" placeholder="Example: 85">
+
+  <label>Current Weight (kg):</label>
+  <input type="number" placeholder="Example: 78">
+<button>enter</button>
+ 
+ <div class="container" id="personal suggestion">
+    <h2>🥦 Personalized Recommendations</h2>
+    <div class="recommendations">
+      <ul>
+        <li>Add more paneer, lentils, and eggs to increase protein.</li>
+        <li>Eat citrus fruits and guava for Vitamin C.</li>
+        <li>Include milk, ragi, and spinach for calcium improvement.</li>
+        <li>Drink at least 2.5 liters of water daily.</li>
+      </ul>
+    </div>
+  </div>
+<div class="container" id="Summary">
+    <h2>📊 Nutrient Summary</h2>
+    <div class="summary">
+      <p><strong>Calories:</strong> 1500 kcal (Recommended: 2000 kcal)</p>
+      <p><strong>Protein:</strong> 40g (Deficient)</p>
+      <p><strong>Iron:</strong> 8mg (Normal)</p>
+      <p><strong>Vitamin C:</strong> 25mg (Low)</p>
+      <p><strong>Calcium:</strong> 400mg (Low)</p>
+    </div>
+  </div>
+
+
+<footer></footer>
+
+</body>
+</html>
